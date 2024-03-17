@@ -1,23 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '@/styles/globals.css'
+import { Separator } from "@/components/ui/separator"
+import { Button } from "@/components/ui/button"
+
 
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<div class="overflow-hidden divide-y divide-gray-200 rounded-lg shadow">
+		<div class="overflow-hidden rounded-lg shadow">
 			<div class="px-4 py-5 sm:px-6">
-			  <!-- Content goes here -->
-			  <!-- We use less vertical padding on card headers on desktop than on body sections -->
+				Id exercitation in ea adipisicing.
 			</div>
 			<div class="px-4 py-5 sm:p-6">
 				<h1 class="text-4xl ">This is My Heading</h1>
 			</div>
+			<div class="bg-gray-200 opacity-30 "><Separator /></div>
 			<div class="px-4 py-4 sm:px-6">
-			  <!-- Content goes here -->
-			  <!-- We use less vertical padding on card footers at all sizes than on headers or body sections -->
+				Id officia commodo labore ut sint aliquip et eu. Dolor consequat nisi voluptate duis. Laborum labore aute anim dolor culpa ad in minim proident. Lorem laborum nisi excepteur aliqua exercitation sint est. Sint nulla consectetur ex ea fugiat amet qui reprehenderit. Exercitation nulla sit reprehenderit ex do elit ipsum. Voluptate labore Lorem consequat.
 			</div>
+			<div class="flex items-center h-5 space-x-4 text-sm">
+				<Button variant="ghost">Ghost</Button>
+				<Separator orientation="vertical" />
+				<div>Docs</div>
+				<Separator orientation="vertical" />
+				<div>Source</div>
+			  </div>
 		  </div>		  
 	</main>
 </Layout>
